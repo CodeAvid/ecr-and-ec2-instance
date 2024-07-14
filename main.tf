@@ -9,11 +9,21 @@ terraform {
   required_version = ">= 1.2.0"
 }
 
+variable "access_key" {
+  type = string
+}
+
+variable "secret_key" {
+  type = string
+}
+
 provider "aws" {
   region     = "us-east-1"
-  access_key = "replace-me"
-  secret_key = "replace-me"
+  access_key = var.access_key
+  secret_key = var.secret_key
 }
+
+
 
 resource "aws_instance" "ec2_app_server" {
   ami           = "ami-0b72821e2f351e396"
