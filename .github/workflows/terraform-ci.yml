@@ -1,5 +1,5 @@
 name: Terraform CI Pipeline
-run-name: deploy-terraform
+run-name: Terraform CI Pipeline
 on: [push]
 
 jobs:
