@@ -1,7 +1,6 @@
 name: deploy EC2 and ECR using terraform
 run-name: deploy-terraform
-on:
-  push:
+on: [push]
 
 jobs:
   deploy:
