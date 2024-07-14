@@ -1,9 +1,10 @@
-name: deploy EC2 and ECR using terraform
+name: Terraform CI Pipeline
 run-name: deploy-terraform
 on: [push]
 
 jobs:
-  deploy:
+  terraform:
+    name: Terraform CI Pipeline
     runs-on: ubuntu-latest
     steps:
       - name: Checkout source code
